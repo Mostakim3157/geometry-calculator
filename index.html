@@ -53,8 +53,12 @@
                       <div class="">
                         <input id="rectangle-width" class="w-24 text-2xl p-2 rounded-md bg-gray-100 mx-4" type="text" placeholder="w" >
                         <span class="text-2xl">cm</span>
-                        <input id="rectangle-lenght" class="w-24 text-2xl p-2 rounded-md bg-gray-100 mx-4" type="text" placeholder="l">
+                        <input id="rectangle-length" class="w-24 text-2xl p-2 rounded-md bg-gray-100 mx-4" type="text" placeholder="l">
                         <span class="text-2xl">cm</span>
+                    </div>
+
+                    <div>
+                        <p class="text-2xl">Area: <span id="rectangle-area"></span> <span>cm<sup>2</sup></span></p>
                     </div>
 
                       <div class="card-actions ">
@@ -63,15 +67,23 @@
                     </div>
                   </div>
 
-                <!-- triangle -->
+                <!-- Ellipse -->
                 <div class="card card-compact w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                    <figure><img src="./images/ellipse.png"
                             alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                        <h2 class="text-center text-2xl">Ellipse</h2>
+                        <p class="text-center text-2xl">Area = πab</p>
+
+                        <div class="">
+                            <input id="ellipse-a" type="text" class="bg-gray-100 w-24 text-2xl p-2 rounded-md  mx-4 " placeholder="a"><span class="text-2xl">cm</span><input id="ellipse-b" type="text" class="bg-gray-100 w-24 text-2xl p-2 rounded-md  mx-4 " placeholder="b"><span class="text-2xl">cm</span>
+                        </div>
+                        <div class="">
+                            <p  class="text-2xl">Area: <span id="ellipse-area"></span>cm<sup>2</sup></p>
+                        </div>
+
+                        <div class="card-actions ">
+                            <button onclick="calculateEllipse()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -110,6 +122,7 @@
 
     <script src="./scripts/triangle.js"></script>
     <script src="./scripts/rectengle.js"></script>
+    <script src="./ellipse.js"></script>
 </body>
 
 </html>
